@@ -1,42 +1,37 @@
-# Content v2 Minimal Starter
+# Bookshelf
 
-Look at the [Content documentation](https://content-v2.nuxtjs.org/) to learn more.
+A Nuxt theme to show book highlights.
+
+:bulb: The book highlights is a json file, which should follow some format, please checkout out another project [Highlights2JSON](https://github.com/Benbinbin/highlights2json) to know more.
 
 ## Setup
 
-Make sure to install the dependencies:
+1. Clone the repo
+
+2. install the dependencies:
 
 ```bash
-# yarn
 yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install --shamefully-hoist
 ```
+
+## content
+
+put the book highlights `*.json` files to :file_folder: `/content` folder
 
 ## Development Server
 
 Start the development server on http://localhost:3000
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 ## Production
 
-Build the application for production:
+Build the static website:
 
 ```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
+yarn generate
 ```
 
 Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment) for more information.
