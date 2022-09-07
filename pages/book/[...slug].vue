@@ -191,7 +191,7 @@ const toggleChapter = (chapter) => {
             <template v-for="chapterItem in highlightsByChapter">
               <div v-if="chapterItem.highlights.length>0" :key="chapterItem.chapter">
                 <button v-if="chapterItem.chapter !== '_unknown_'"
-                  class="my-12 p-2 text-xl font-bold hover:opacity-80 underline decoration-[12px] decoration-yellow-200 underline-offset-2 rounded transition-opacity duration-300"
+                  class="my-12 p-2 text-xl font-bold hover:opacity-80 underline decoration-4 decoration-yellow-200 underline-offset-2 rounded transition-opacity duration-300"
                   :class="collapseChapters.has(chapterItem.chapter)? 'text-yellow-600 bg-yellow-100 ' : 'text-gray-600 bg-transparent '"
                   @click="toggleChapter(chapterItem.chapter)">
                   {{ chapterItem.chapter }}
